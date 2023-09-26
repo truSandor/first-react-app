@@ -29,9 +29,8 @@ const Footer = () => (
   </footer>
 )
 
-const Page = () => (
-  <page>
-    <Header />
+const MainContent = () => (
+  <div>
     <h1>Fun facts about React</h1>
     <ol>
       <li>Was first released in 2013</li>
@@ -40,6 +39,13 @@ const Page = () => (
       <li>Is maintained by Facebook</li>
       <li>Powers thousands of enterprise apps, including mobile apps</li>
     </ol>
+  </div>
+)
+
+const Page = () => (
+  <page>
+    <Header />
+    <MainContent />
     <Footer />
   </page>
 )
