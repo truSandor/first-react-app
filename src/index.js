@@ -9,11 +9,16 @@ root.appendChild(element) */ // this works, but it's not React
 
 const root = ReactDOM.createRoot(document.getElementById('root'))
 
-const Img = () => <img src="react-logo.png" alt="react logo" width="40px" />
+const Img = () => <img className="nav-logo" src="react-logo.png" alt="react logo" />
 
 const Nav = () => (
-  <nav>
+  <nav className="nav">
     <Img />
+    <ul className="nav-items">
+      <li>Pricing</li>
+      <li>About</li>
+      <li>Contact</li>
+    </ul>
   </nav>
 )
 
@@ -24,13 +29,13 @@ const Header = () => (
 )
 
 const Footer = () => (
-  <footer>
+  <footer className="footer">
     <small>© 2023 TruSandor development. No rights reserved.</small>
   </footer>
 )
 
 const MainContent = () => (
-  <div>
+  <div className="main-content">
     <h1>Fun facts about React</h1>
     <ol>
       <li>Was first released in 2013</li>
