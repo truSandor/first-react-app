@@ -9,7 +9,7 @@ root.appendChild(element) */ // this works, but it's not React
 
 const root = ReactDOM.createRoot(document.getElementById('root'))
 
-const page = (
+const Page = () => (
   <div>
       <img src="react-logo.png" alt="react logo" width="80px" />
       <h1>Fun facts about React</h1>
@@ -23,4 +23,4 @@ const page = (
   </div>
 )
 
-root.render(page)
+root.render(<Page />)
