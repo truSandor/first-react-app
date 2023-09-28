@@ -48,11 +48,11 @@ const MainContent = () => (
 )
 
 const Page = () => (
-  <page>
+  <div className="page">
     <Header />
     <MainContent />
     <Footer />
-  </page>
+  </div>
 )
 
 root.render(<Page />)
